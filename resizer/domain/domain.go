@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	CannotFetch = errors.New("cannot fetch source image")
+	ErrFetchImage = errors.New("cannot fetch source image")
 )
 
 type Domain struct {
@@ -42,7 +42,7 @@ func (d *Domain) FetchResize(ctx context.Context, buf *bytes.Buffer, url string,
 
 	ct, err := d.fetch(ctx, url, bufSrc)
 	if err != nil {
-		return "", CannotFetch
+		return "", ErrFetchImage
 	}
 
 	if err := d.resizer.Resize(ct, bufSrc, buf, w, h); err != nil {
