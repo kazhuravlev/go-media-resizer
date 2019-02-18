@@ -12,9 +12,7 @@ import (
 )
 
 var (
-	BadResponse           = errors.New("bad response code")
-	CannotFetch           = errors.New("cannot fetch source image")
-	ErrInvalidSourceImage = errors.New("invalid source image")
+	CannotFetch = errors.New("cannot fetch source image")
 )
 
 type Domain struct {
