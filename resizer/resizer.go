@@ -45,7 +45,7 @@ func main() {
 		},
 		DefaultResizer: &domain.Proxy{},
 	}
-	domainInstance, err := domain.New(httpClient, resizer)
+	domainInstance, err := domain.New(httpClient, resizer, dbFilename)
 	if err != nil {
 		log.Fatalf("Cannot run domain instance: %s", err)
 	}
