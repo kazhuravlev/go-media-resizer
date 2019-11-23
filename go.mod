@@ -1,4 +1,4 @@
-module github.com/kazhuravlev/go-media-resizer
+module github.com/kazhuravlev/sample-media-resizer
 
 require (
 	github.com/disintegration/imaging v1.6.0
@@ -7,3 +7,5 @@ require (
 	golang.org/x/image v0.0.0-20190209060608-ef4a1470e0dc // indirect
 	golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a // indirect
 )
+
+go 1.13

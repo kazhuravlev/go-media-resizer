@@ -3,7 +3,7 @@ package facade
 import (
 	"bytes"
 	"context"
-	"github.com/kazhuravlev/go-media-resizer/resizer/domain"
+	"github.com/kazhuravlev/sample-media-resizer/resizer/domain"
 	"github.com/valyala/fasthttp"
 	"log"
 	"net"
